@@ -22,15 +22,15 @@ PURPLE = Category20[9][8]
 BROWN = Category20[11][10]
 
 stock_select = Select(
-    options=['ARTO', 'BBCA', 'BBKP', 'BBNI', 'BDMN', 'BMRI', 'BMRI', 'BNII', 'BNLI', 'MEGA'],
-    value='ARTO',
-    title='Stock name'
+    options=['HANG SENG', 'NASDAQ', 'NIKKEI'],
+    value='HANG SENG ',
+    title='Nama Saham'
 )
 
 year_slider = Slider(
-    start=2019,
-    end=2021, step=1, value=2019, 
-    title='Year'
+    start=2018,
+    end=2020, step=1, value=2018, 
+    title='Tahun Pergerakan Saham'
 )
 
 def get_symbol_df(symbol=None):
